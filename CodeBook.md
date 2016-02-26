@@ -1,12 +1,12 @@
 #The Code Book
-##Code book
-###Raw data
+##The Raw data
 In the raw data, each record is provided:
 * Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 * Triaxial Angular velocity from the gyroscope. 
 * A 561-feature vector with time and frequency domain variables. 
 * Its activity label. There are six activity labels: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 * An identifier of the subject who carried out the experiment. The identifier is labeled from 1 to 30.
+
 There are 7352 obs from train set and 2947 obs from test set. The total number of observations is 10299.
 
 These signals were used to estimate variables of the feature vector for each pattern:  '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
@@ -54,7 +54,7 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 * tBodyGyroMean
 * tBodyGyroJerkMean
 
-###The tidy data
+##The tidy data
 In the tidy data, we calculate the average of each variable for each activity and each subject. The variable names is suggested by the column names of the output.
 
 Notes:
@@ -64,5 +64,7 @@ Notes:
 
 ##Study design
 In the process of cleaning the data set, we will use the <b>data.table</b> package. The </b>data.table</b> offers a variety of functions to load and manipulate the data. Please make sure you have installed this package before you run the run_analysis.R script. 
+
 Among all the functions <b>data.table</b> provides, we will use the <b>fread</b> function which offers a faster and more convenient way to load data and some other data manipulation in the framework of data.table, such as subsetting. 
+
 Finally, the run_analysis.R script will output a tidy dataset which is stored in a text file named "tidydataset.txt" by using the function <b>write.table()</b> with the setting <b>"row.names=FALSE"</b>.
