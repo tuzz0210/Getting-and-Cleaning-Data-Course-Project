@@ -68,4 +68,4 @@ In the process of cleaning the data set, we will use the <b>data.table</b> packa
 
 Among all the functions <b>data.table</b> provides, we will use the <b>fread</b> function which offers a faster and more convenient way to load data and some other data manipulation in the framework of data.table, such as subsetting. 
 
-Finally, the run_analysis.R script will output a tidy dataset which is stored in a text file named "tidydataset.txt" by using the function <b>write.table()</b> with the setting <b>"row.names=FALSE"</b>.
+Finally, the run_analysis.R script will output a tidy dataset which is stored in a text file named <b>"tidydataset.txt"</b> by using the function <b>write.table()</b> with the setting <b>"row.names=FALSE"</b>.
