@@ -57,6 +57,7 @@ Additional vectors obtained by averaging the signals in a signal window sample. 
 ##The tidy data
 In the tidy data, we calculate the average of each variable for each activity and each subject. The variable names is suggested by the column names of the output.
 
+##Others
 Notes:
 * The angular velocity vector measured by the gyroscope for each window sample. The units are <b>radians/second</b>.
 * Features are normalized and bounded within [-1,1].
